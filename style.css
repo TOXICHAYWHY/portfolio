@@ -6,11 +6,12 @@
 text-decoration:none; 
 list-style:none;}
 .header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 12%;
+    margin-top: auto;
+    padding: 15px 12%;
     background: black;
     backdrop-filter: blur(10px);
     display: flex;
@@ -34,7 +35,7 @@ span{
     color: brown;
 }
 .navbar a{
-    font-size: 10px;
+    font-size: 16px;
     color: white;
     font-weight: 500;
     margin: 0 20px;
@@ -51,10 +52,11 @@ span{
     background-color: white;
     border: 2px solid transparent;
     border-radius: 8px;
-    font-size: 10px;
+    font-size: 16px;
     letter-spacing: 3px;
     font-weight: 600;
     transition: 0.3s ease;
+    /* margin-left: 17px; */
 }
 .contact:hover{
     background-color: brown;
@@ -121,7 +123,7 @@ cursor: pointer;}
 }
 .img-box img{
     border-radius: 50%;
-    width: 550px;
+    width: 300px;
 }
 ::-webkit-scrollbar{
     width: 15px;
@@ -145,7 +147,7 @@ cursor: pointer;}
 }
 .about-img img{
     position: relative;
-    width: 550px;
+    width: 300px;
     box-shadow: 0 0 25px brown
                0 0 25px  brown;
                 border-radius:50%;
@@ -162,7 +164,8 @@ cursor: pointer;}
 .about-content p{
     color: wheat;
     font-size: 20px;
-    margin: 2cm,0,3cm;
+    margin-bottom: 30px;
+    /* margin: 2cm,0,3cm; */
 }
 .contact-form h2{
     text-align: center;
@@ -192,6 +195,24 @@ background: rgb(241,241,241);
 border-radius: .8rem;
 margin: 1rem 0;
 resize: none;
+}
+.projects{
+    box-sizing: content-box;
+    display: flex;
+    
+}
+.proj1{
+    text-align: center;
+    text-decoration: solid;
+    font-family: 'Trebuchet MS';
+
+}
+.proj2{
+    display: block;
+}
+.imgcov{
+    width: 200px;
+    height: 200px;
 }
 .footer{
     position: relative;
@@ -252,3 +273,34 @@ padding: 0 15px;
     font-size: 12px;
     color: wheat;
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="header"] {
+        padding: 15px 3%;
+        /* margin-top: 135px; */
+        /* margin-bottom: 20px; */
+
+      width:100%;
+      display: flex;
+       /* justify-content: space-evenly; */
+    }
+    [class*="home"]{
+        width: 100%;
+        /* margin-top: 20px; */
+        /* margin-bottom: 20px; */
+        display: block;
+    }
+    [class*="img-box"] {
+        height:auto; 
+        margin-top: 13px;
+    }
+    [class*="about"]{
+        width: 100%;
+        display: block;
+    }
+  }
+    .back-to-top{
+        position: fixed;
+        
+    
+    }

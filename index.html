@@ -6,54 +6,69 @@
     <title>simple portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
 </head>
 <body>
       <header class="header">
       <a href="#" class="logo"><span>Hay</span>why</a>
 <nav class="navbar">
     <a href="#" class="active">portfolio</a>
-    <a href="#">services</a>
-    <a href="#">experience</a>
-    <a href="#">projects</a>
+    <a href="#">services</a> 
+    <a href="#experience">experience</a>
+    <a href="#projects" >projects</a>
     <a href="#">education</a>
 </nav> 
+
+
 <a href="#" class="contact">contact me</a>    </header>
-<section class="home">
+<section  class="home">
     <div class="home-content">
-        <h3>Hi</h3>
+
+        <h3  data-aos="fade-up-right" data-aos-delay="300">Hi</h3>
         <h1>I'm <span>Ayodele<br></span>a frontend developer</h1>
         <p>   Hi, I'm Ayodele Ajayi a frontend web developer, i create different websites with the use of html, css and javascript
             a skill which i obtained at proxy coding school do well to hire me.
             </p>
             <div class="btn-box">
                 <button class="btn-1">hire me</button>
-                <button class="btn-2">experience</button>
+            <button class="btn-2">experience</button>
             </div>
     </div>
 
     <div class="img-box">
-        <img src="ayo1.jpg" alt="">
+        <img src="ayo1.jpg" alt="" data-aos="zoom-out-down" data-aos-delay="300" >
     </div>
 </section>
 
-<section class="about">
+<section class="about" id="experience">
     <div class="about-img">
         <img src="ayo1.jpg" alt="">
     </div>
-
     <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2> 
         <br>
         <h3>frontend <span> Developer</span></h3>
         <br>
         <p>Hi, I'm Ayodele Ajayi a frontend web developer, i create different websites with the use of html, css and javascript
-            a skill which i obtained at proxy coding school do well to hire me.</p>
+I worked on different projects which you can see in my project space below.</p>
             <a href="#" class="btn-2"> experience</a>
     </div>
 </section>
+<section id="projects"><div>
+    <h1 class="proj1">my projects below</h1>  
+<div class="proj2">
+  <h2>My portfolio</h2>
+     <img src="covpic.PNG" alt="" class="imgcov" > <a href="https://portfolio-krvg.vercel.app/"><button>demo</button></a>
+</div>
+<div class="proj3"> 
+ <h2 class="proj4">My Biography</h2>
+ <img src="ayo2.jpg" alt="" class="imgcov"> <a href="https://biography-cc9y.vercel.app/"><button>demo</button></a>
+</div>
+</div></section>
 
-<section
-class="contact-form">
+ <section
+class="contact-form"><div>
 <h2 class="contact-me">contact <span>me</span></h2>
 <form action="#">
     <div class="input-box">
@@ -67,7 +82,11 @@ class="contact-form">
     <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
     <input type="Submit" value="send Message" class="btn-1">
 </form>
-</section>
+</section></div>
+
+<a href="">
+    <button class="back-to-top">go up</button>
+</a>
 
 
 <footer class="footer">
@@ -99,5 +118,9 @@ class="contact-form">
         @  2024 Haywhy | All Rights Reserved
     </p>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
